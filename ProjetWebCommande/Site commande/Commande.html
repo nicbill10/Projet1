@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Styles/StyleCom.css"/>
+        <title>Accueil</title>
+        <meta charset="utf-8">
+		<script src="Styles/scriptCommande.js"></script>
+</head>
+<body>
+
+<header>
+	<h1>PROUF Informatique</h1>
+</header>
+<nav>
+	<ul id="MenuPrin">
+		<li><a href="Main Page.html">Accueil</a></li>
+		<li><a href="Produits.html">Nos Produits</a></li>
+		<li><a href ="Commande.html">Passez vos commandes</a></li>
+		<li><a href ="Contact.html">Contactez nous</a></li>
+
+	</ul>   
+</nav>
+
+<article>
+<br>
+	Effectuez votre commande
+		<br>
+		<br><label>Prénom et nom<br></label><input type =" text " placeholder="Prénom et nom" name ="nom" onblur="verifPrenom(this)"/>
+		<br><br><label>Adresse de livraison<br></label><input type="text" placeholder="Adresse" name="adresse">
+		<br><br><label>Ville<br></label><input type="text" placeholder="Ville" name="ville">
+		<br><br><label>Numéro de téléphone<br></label><input type="text" placeholder="Téléphone" name="téléphone" onblur="veriftelephone(this)" >
+		<br><br><label>Numéro de carte de crédit<br></label><input type="text" placeholder="Numéro de carte de crédit" name="Carte de crédit" onblur="verifcredit(this)">
+		<br><br><label>Adresse email<br></label><input type="email" placeholder="Courriel" name="courriel" onblur="verifMail(this)" >
+		<br><br><label>Produits</label>
+		
+		<br><select name="Produits">
+			<optgroup label="Moniteurs">
+			<option value="Acer Predator X34">Acer Predator X34</option>
+			<option value="Samsung S27D590C">Samsung S27D590C</option>
+			<option value="Philips 279X6QJSW">Philips 279X6QJSW</option>
+			<optgroup label="Claviers">
+			<option value="CM Storm Devastator">CM Storm Devastator</option>
+			<option value="RAZER DeathStalker">RAZER DeathStalker</option>
+			<option value="RAZER Blackwidow">RAZER Blackwidow</option>
+			<optgroup label="Souris">
+			<option value="Logitech G602">Logitech G602</option>
+			<option value="RAZER Ouroboros">RAZER Ouroboros</option>
+			<option value="ASUS ROG Spatha">ASUS ROG Spatha</option>
+			</select>
+			
+		<br><select name="Produits">
+			<optgroup label="Moniteurs">
+			<option value="Acer Predator X34">Acer Predator X34</option>
+			<option value="Samsung S27D590C">Samsung S27D590C</option>
+			<option value="Philips 279X6QJSW">Philips 279X6QJSW</option>
+			<optgroup label="Claviers">
+			<option value="CM Storm Devastator">CM Storm Devastator</option>
+			<option value="RAZER DeathStalker">RAZER DeathStalker</option>
+			<option value="RAZER Blackwidow">RAZER Blackwidow</option>
+			<optgroup label="Souris">
+			<option value="Logitech G602">Logitech G602</option>
+			<option value="RAZER Ouroboros">RAZER Ouroboros</option>
+			<option value="ASUS ROG Spatha">ASUS ROG Spatha</option>
+			</select>
+			
+		<br><select name="Produits">
+			<optgroup label="Moniteurs">
+			<option value="Acer Predator X34">Acer Predator X34</option>
+			<option value="Samsung S27D590C">Samsung S27D590C</option>
+			<option value="Philips 279X6QJSW">Philips 279X6QJSW</option>
+			<optgroup label="Claviers">
+			<option value="CM Storm Devastator">CM Storm Devastator</option>
+			<option value="RAZER DeathStalker">RAZER DeathStalker</option>
+			<option value="RAZER Blackwidow">RAZER Blackwidow</option>
+			<optgroup label="Souris">
+			<option value="Logitech G602">Logitech G602</option>
+			<option value="RAZER Ouroboros">RAZER Ouroboros</option>
+			<option value="ASUS ROG Spatha">ASUS ROG Spatha</option>
+			</select><br><br>
+
+			
+		<input id="btnConfirmer" type="submit" value="Confirmer la commande" onblur="valider()"/>
+	</select>
+</article>
+
+
+</body>
+</html>

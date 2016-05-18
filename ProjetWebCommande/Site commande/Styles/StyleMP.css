@@ -1,0 +1,146 @@
+header
+{
+	
+	width:100%;
+	height:50%;
+	background-color:RGB(0,40,58);
+}
+
+h1
+{
+	padding-top:40px;
+	font-size:4em;
+	text-align:center;
+	line-height:-200px;
+	color:white;
+}
+
+nav
+{
+	display:inline-block;
+	border-top:dotted;
+	border-bottom:dotted;
+	width:100%;
+	height:50px;
+	text-align:center;
+	margin-bottom:125px;
+	background-color:yellow;
+}
+
+li
+{
+	color:black;
+	font-size:1.5em;
+	display:inline;
+	margin-right:135px;
+	line-height:8px;
+}
+
+ul
+{
+	list-style-type:none;
+}
+
+section
+{
+	color:black;
+	width:100%;
+	height:300px;
+}
+
+p
+{ 
+	font-size:2em;
+	animation:bounceInLeft 1s;
+}
+
+a
+{
+	color:black;
+}
+
+body
+{
+	background-color:RGB(242,242,242);
+}
+
+a:hover
+{
+	color: yellow;
+	background-color: RGB(0,40,58);
+}
+
+#PC
+{
+	float:right;
+	margin-right:275px;
+	animation: flipInX 3s;
+	animation-delay:2s;
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
